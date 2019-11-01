@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sirius/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rr_sirius
+PRODUCT_NAME := lineage_sirius
 PRODUCT_DEVICE := sirius
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 SE
@@ -27,7 +27,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sirius-user 9 PKQ1.181121.001 9.3.28 release-keys" \
     PRODUCT_NAME="sirius" \
     TARGET_DEVICE="sirius"
-    DEVICE_MAINTAINERS="Uixdess"
+    DEVICE_MAINTAINERS="For all "
 
 TARGET_GAPPS_ARCH :=arm64
 
